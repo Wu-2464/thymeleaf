@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleafTest</title>
+<!--    <link rel="stylesheet" th:href="@{static/js/jquery-1.12.js}">-->
+<!--    <script src="@{}"></script>    -->
+</head>
+<body>
+dd
+<!--    用户名: <span th:text="${userName}"></span><br>
+    拼接字符串:<span th:text="'我的名字叫做'+${userName}"></span><br>
+    session中的对象<span th:text="${session.sessionUser.userName}"></span><br>
+&lt;!&ndash;    model中的对象<span th:text="${#dates.day(birthday)}"></span>&ndash;&gt;
+//使用date类型需加dates.format(${},'dd/MMM/yyyy HH:mm')
+    <a th:href="@{get(id=${user.id})}">详情</a><br>
+    用户角色:<div th:if="${user.userRole}==1">管理员</div><br>
+    用户角色:<div th:if="${user2.userRole}==2">经理</div><br>
+    用户角色:<div th:if="${user3.userRole==3}">普通员工</div><br>
+    <table>
+        <tr>
+            <td>用户角色</td>
+            <td>用户姓名</td>
+            <td>用户编码</td>
+            <td>出生日期</td>
+            <td>状态对象</td>
+        </tr>
+        //user后为statu赋值默认为each后值+Stat
+        <tr th:each="user,ustate:${userList}" th:object="${user}">
+            <td th:text="*{userRole}"></td>
+            <td th:text="*{userName}"></td>
+            <td th:text="*{userCode}"></td>
+            <td th:text="*{birthday}"></td>
+            <td th:text="${ustate}"></td>
+        </tr>
+    </table>
+    用户角色switch
+    <div th:switch="${user.userRole}">
+    <p th:case="1">管理员</p>
+    <p th:case="${user.userRole}">经理</p>
+    <p th:case="*">普通员工</p>
+    </div>
+    用户角色switch
+    <div th:switch="${user2.userRole}">
+        <p th:case="1">管理员</p>
+        <p th:case="${user2.userRole}">经理</p>
+        <p th:case="*">普通员工</p>
+    </div>
+    用户角色switch
+    <div th:switch="${user3.userRole}">
+        <p th:case="1">管理员</p>
+        <p th:case="${user3.userRole}">经理</p>
+        <p th:case="*">普通员工</p>
+    </div>
+
+    <div th:insert="footer :: copy"></div>
+    <div th:replace="footer :: copy"></div>-->
+</body>
+</html>
